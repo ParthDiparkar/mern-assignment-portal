@@ -1,0 +1,814 @@
+/* =========================================
+   My Submissions Page
+========================================= */
+
+.my-submissions-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  color: #111827;
+}
+
+/* =========================================
+   Navbar
+========================================= */
+
+.my-submissions-navbar {
+  height: 72px;
+  padding: 0 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.my-submissions-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.my-submissions-brand-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eef2ff;
+  border-radius: 11px;
+
+  font-size: 21px;
+}
+
+.my-submissions-brand h2 {
+  margin: 0;
+
+  color: #111827;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.my-submissions-back-button {
+  padding: 10px 16px;
+
+  background: #ffffff;
+  border: 1px solid #dbe1ea;
+  border-radius: 9px;
+
+  color: #374151;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.my-submissions-back-button:hover {
+  background: #f8fafc;
+  border-color: #c7d0dd;
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   Main
+========================================= */
+
+.my-submissions-main {
+  width: min(1180px, calc(100% - 48px));
+
+  margin: 0 auto;
+  padding: 38px 0 60px;
+}
+
+/* =========================================
+   Page Heading
+========================================= */
+
+.my-submissions-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+
+  margin-bottom: 25px;
+}
+
+.my-submissions-badge {
+  display: inline-flex;
+
+  padding: 6px 10px;
+  margin-bottom: 9px;
+
+  background: #eef2ff;
+  color: #4f46e5;
+
+  border-radius: 7px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.my-submissions-heading h1 {
+  margin: 0;
+
+  color: #111827;
+  font-size: 29px;
+  line-height: 1.2;
+}
+
+.my-submissions-heading p {
+  margin: 7px 0 0;
+
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.submission-total {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  padding: 12px 16px;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 11px;
+
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+}
+
+.submission-total-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eef2ff;
+  border-radius: 9px;
+
+  font-size: 17px;
+}
+
+.submission-total strong {
+  display: block;
+
+  color: #111827;
+  font-size: 19px;
+  line-height: 1;
+}
+
+.submission-total span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #6b7280;
+  font-size: 10px;
+}
+
+/* =========================================
+   Message
+========================================= */
+
+.my-submissions-message {
+  margin-bottom: 20px;
+  padding: 13px 16px;
+
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  border-radius: 10px;
+
+  color: #3730a3;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* =========================================
+   Loading
+========================================= */
+
+.my-submissions-loading {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #6b7280;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* =========================================
+   Empty State
+========================================= */
+
+.no-student-submissions {
+  padding: 70px 30px;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  text-align: center;
+
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.04);
+}
+
+.empty-icon {
+  width: 64px;
+  height: 64px;
+
+  margin: 0 auto 17px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f1f5f9;
+  border-radius: 16px;
+
+  font-size: 29px;
+}
+
+.no-student-submissions h2 {
+  margin: 0;
+
+  color: #111827;
+  font-size: 21px;
+}
+
+.no-student-submissions p {
+  margin: 8px 0 20px;
+
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.no-student-submissions button {
+  padding: 10px 17px;
+
+  background: #4f46e5;
+  border: none;
+  border-radius: 8px;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.no-student-submissions button:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   Submission List
+========================================= */
+
+.student-submissions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* =========================================
+   Submission Card
+========================================= */
+
+.student-submission-card {
+  overflow: hidden;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+}
+
+/* =========================================
+   Submission Header
+========================================= */
+
+.student-submission-header {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  padding: 20px 24px;
+
+  background: #fbfcfe;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.student-assignment-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eef2ff;
+  border-radius: 10px;
+
+  font-size: 19px;
+}
+
+.student-assignment-title {
+  min-width: 0;
+}
+
+.subject-label {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #4f46e5;
+
+  font-size: 10px;
+  font-weight: 750;
+
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.student-submission-header h2 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.student-submission-status {
+  margin-left: auto;
+
+  flex-shrink: 0;
+
+  padding: 7px 11px;
+
+  border-radius: 999px;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.student-submission-status.graded {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.student-submission-status.submitted {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+/* =========================================
+   Details
+========================================= */
+
+.student-submission-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.student-detail {
+  min-width: 0;
+
+  padding: 18px 20px;
+
+  border-right: 1px solid #e5e7eb;
+}
+
+.student-detail:last-child {
+  border-right: none;
+}
+
+.student-detail span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #9ca3af;
+
+  font-size: 10px;
+  font-weight: 750;
+
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+}
+
+.student-detail strong {
+  display: block;
+
+  overflow: hidden;
+
+  color: #374151;
+
+  font-size: 12px;
+  line-height: 1.4;
+
+  text-overflow: ellipsis;
+}
+
+.result-detail strong {
+  color: #4f46e5;
+  font-size: 14px;
+}
+
+/* =========================================
+   File Section
+========================================= */
+
+.student-file-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  margin: 20px 24px;
+  padding: 15px 16px;
+
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 11px;
+}
+
+.student-file-info {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  min-width: 0;
+}
+
+.student-file-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+
+  font-size: 18px;
+}
+
+.student-file-info strong {
+  display: block;
+
+  max-width: 430px;
+
+  overflow: hidden;
+
+  color: #111827;
+
+  font-size: 13px;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.student-file-info span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #9ca3af;
+  font-size: 10px;
+}
+
+.student-view-file {
+  flex-shrink: 0;
+
+  padding: 9px 13px;
+
+  background: #ffffff;
+  border: 1px solid #dbe1ea;
+  border-radius: 8px;
+
+  color: #374151;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  transition: all 0.2s ease;
+}
+
+.student-view-file:hover {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+  color: #4338ca;
+}
+
+/* =========================================
+   Work Notes
+========================================= */
+
+.student-work-notes {
+  margin: 0 24px 20px;
+  padding: 16px 17px;
+
+  background: #fafbfc;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.student-work-notes > span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #6b7280;
+
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.student-work-notes p {
+  margin: 0;
+
+  color: #4b5563;
+
+  font-size: 13px;
+  line-height: 1.65;
+
+  white-space: pre-wrap;
+}
+
+/* =========================================
+   Grade Box
+========================================= */
+
+.student-grade-box {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 20px;
+
+  padding: 20px 24px;
+
+  background: #f7fdf9;
+  border-top: 1px solid #d1fae5;
+}
+
+.grade-result {
+  padding-right: 20px;
+
+  border-right: 1px solid #d1fae5;
+}
+
+.grade-result span,
+.grade-remarks span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #6b7280;
+
+  font-size: 10px;
+  font-weight: 750;
+
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+}
+
+.grade-result strong {
+  color: #15803d;
+  font-size: 25px;
+}
+
+.grade-result small {
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.grade-remarks p {
+  margin: 0;
+
+  color: #374151;
+
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+/* =========================================
+   Pending Grade
+========================================= */
+
+.student-pending-box {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  margin-top: 2px;
+  padding: 17px 24px;
+
+  background: #fffbeb;
+  border-top: 1px solid #fde68a;
+}
+
+.pending-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fef3c7;
+  border-radius: 9px;
+
+  font-size: 16px;
+}
+
+.student-pending-box strong {
+  display: block;
+
+  color: #92400e;
+  font-size: 12px;
+}
+
+.student-pending-box p {
+  margin: 3px 0 0;
+
+  color: #a16207;
+  font-size: 11px;
+}
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 900px) {
+
+  .my-submissions-navbar {
+    padding: 0 24px;
+  }
+
+  .my-submissions-main {
+    width: min(100% - 32px, 760px);
+    padding-top: 28px;
+  }
+
+  .student-submission-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .student-detail:nth-child(2) {
+    border-right: none;
+  }
+
+  .student-detail:nth-child(-n + 2) {
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .student-grade-box {
+    grid-template-columns: 150px 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .my-submissions-navbar {
+    height: auto;
+    min-height: 68px;
+
+    padding: 12px 16px;
+
+    gap: 10px;
+  }
+
+  .my-submissions-brand-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
+  }
+
+  .my-submissions-brand h2 {
+    font-size: 16px;
+  }
+
+  .my-submissions-back-button {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  .my-submissions-main {
+    width: calc(100% - 24px);
+    padding: 22px 0 40px;
+  }
+
+  .my-submissions-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .my-submissions-heading h1 {
+    font-size: 24px;
+  }
+
+  .submission-total {
+    width: 100%;
+  }
+
+  .student-submission-header {
+    padding: 17px;
+  }
+
+  .student-assignment-icon {
+    width: 39px;
+    height: 39px;
+    font-size: 17px;
+  }
+
+  .student-submission-header h2 {
+    font-size: 14px;
+  }
+
+  .student-submission-status {
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+
+  .student-submission-details {
+    grid-template-columns: 1fr;
+  }
+
+  .student-detail {
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .student-detail:last-child {
+    border-bottom: none;
+  }
+
+  .student-file-section {
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin: 17px;
+  }
+
+  .student-view-file {
+    width: 100%;
+    text-align: center;
+  }
+
+  .student-file-info strong {
+    max-width: 240px;
+  }
+
+  .student-work-notes {
+    margin: 0 17px 17px;
+  }
+
+  .student-grade-box {
+    grid-template-columns: 1fr;
+
+    padding: 18px 17px;
+  }
+
+  .grade-result {
+    padding-right: 0;
+    padding-bottom: 14px;
+
+    border-right: none;
+    border-bottom: 1px solid #d1fae5;
+  }
+
+  .student-pending-box {
+    padding: 16px 17px;
+  }
+}
